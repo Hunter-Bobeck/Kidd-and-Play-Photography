@@ -75,7 +75,7 @@ Main components
 .cd-item > img {
   display: block;
   width: 100%;
-}
+}F
 .cd-quick-view{
 	position:relative;
 	z-index:9999
@@ -120,7 +120,7 @@ Main components
   width: 100%;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.65);
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -132,7 +132,7 @@ Main components
   transition: opacity 0.2s, background-color 0.2s;
 }
 .no-touch .cd-trigger:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
 }
 @media only screen and (min-width: 1024px) {
   .cd-trigger {
@@ -515,4 +515,8 @@ Main components
 
 .cd-slider, .cd-slider-navigation {
   margin-bottom: 0px;
+}
+
+.cd-trigger {
+  opacity: 1;
 }
