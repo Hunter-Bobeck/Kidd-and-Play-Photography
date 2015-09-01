@@ -675,3 +675,24 @@ footer, #footer, footer p, #footer p {
     margin-top: 50px;
   }
 }
+
+
+
+
+#small-logo {
+    display: none;
+}
+@media (max-width: 432px) {
+    #large-logo {
+        display: none;
+    }
+    #small-logo {
+        display: inline;
+    }
+    #prices-container p {
+        margin: auto 20px;
+    }
+    #author {
+      font-size: 15px;
+    }
+}
