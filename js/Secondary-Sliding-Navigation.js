@@ -14,6 +14,19 @@ jQuery(document).ready(function($){
 		$('.cd-main-nav').toggleClass('nav-is-visible');
 		$('.cd-main-content').toggleClass('nav-is-visible');
 	});
+	///////////////////////////////////////////////////////////////////////////////////
+	function locationHashChanged(){
+	    if (location.hash === "#About" || location.hash === "#Gallery" || location.hash === "#Prices" || location.hash === "#Contact") {
+	        event.preventDefault();
+			if($('header').hasClass('nav-is-visible')) $('.moves-out').removeClass('moves-out');
+			$('header').toggleClass('nav-is-visible');
+			$('.cd-main-nav').toggleClass('nav-is-visible');
+			$('.cd-main-content').toggleClass('nav-is-visible');
+		}
+	}
+
+	window.onhashchange = locationHashChanged;
+	///////////////////////////////////////////////////////////////////////////////////
 
 	//mobile version - go back to main navigation
 	$('.go-back').on('click', function(event){
@@ -27,10 +40,16 @@ jQuery(document).ready(function($){
 		event.preventDefault();
 		$('.cd-main-nav').toggleClass('moves-out');
 	});
+	///////////////////////////////////////////////////////////////////////////////////
 	$('.services').on('click', function(event){
 		event.preventDefault();
+		if($('header').hasClass('nav-is-visible')) $('.moves-out').removeClass('moves-out');
+		$('header').toggleClass('nav-is-visible');
+		$('.cd-main-nav').toggleClass('nav-is-visible');
+		$('.cd-main-content').toggleClass('nav-is-visible');
 		$('.cd-main-nav').toggleClass('moves-out');
 	});
+	///////////////////////////////////////////////////////////////////////////////////
 
 
 	function moveNavigation(){
