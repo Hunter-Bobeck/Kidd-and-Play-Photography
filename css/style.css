@@ -679,6 +679,9 @@ footer, #footer, footer p, #footer p {
 
 
 
+#tiny-logo {
+    display: none;
+}
 #small-logo {
     display: none;
 }
@@ -689,10 +692,21 @@ footer, #footer, footer p, #footer p {
     #small-logo {
         display: inline;
     }
-    #prices-container p {
-        margin: auto 20px;
+    #prices-container p, #author p {
+        margin: auto 10px;
     }
     #author {
       font-size: 15px;
+    }
+    #bubble {
+      margin: auto 10%;
+    }
+}
+@media (max-width: 320px) {
+    #small-logo {
+      display: none;
+    }
+    #tiny-logo {
+      display: inline;
     }
 }
