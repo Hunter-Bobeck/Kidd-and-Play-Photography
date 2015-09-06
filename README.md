@@ -1,2 +1,2 @@
 # KiddandPlayPhotography.com
-Check out Kendra Kidd's photography services! Kidd and Play Photography offers senior portraits, engagement photos, event photography, weddings, cosplay, and more.
+This is the website for Kidd and Play Photography, Kendra Kidd's photography service in the Indianapolis area.
